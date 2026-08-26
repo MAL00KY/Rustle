@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy — Rustleaf</title>
+<meta name="description" content="Rustleaf does not send your voice, or anything you say, anywhere. Here is exactly what it keeps and where.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="mast">
+    <svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M0 24 C0 3.6 13.2 0 24 0 C20.4 24 10.8 24 0 24 Z" fill="#4AB06C"/>
+      <path d="M0 24 L24 0" stroke="#0C0D0E" stroke-width="1.7"/>
+    </svg>
+    <b>Rustleaf</b>
+    <a href="index.html">Home</a>
+  </header>
+
+  <div class="doc-head">
+    <p class="eyebrow">Rustleaf</p>
+    <h1>Privacy policy</h1>
+    <p class="when">Last updated 26 August 2026</p>
+  </div>
+
+  <div class="claim">
+    <p><strong>Rustleaf does not send your voice, or anything you say, anywhere.</strong></p>
+    <p>
+      There is no Rustleaf server. There is no account. Nothing you dictate is uploaded,
+      analysed, or seen by anyone but you. The speech recognition runs on your own computer.
+    </p>
+  </div>
+
+  <p>
+    That is the whole policy in two sentences. The rest of this page explains exactly what
+    Rustleaf touches and where it is kept, because a promise like that is only worth anything
+    if you can check it.
+  </p>
+
+  <h2>What Rustleaf records</h2>
+
+  <h3>Your voice</h3>
+  <p>
+    While you hold the keys, Rustleaf records from your microphone to a temporary file on your
+    own computer. That file is passed to the speech engine &mdash; also running on your
+    computer, reachable only from your computer &mdash; and is <strong>deleted immediately
+    afterwards</strong>. It is never uploaded.
+  </p>
+
+  <h3>What you said</h3>
+  <p>
+    Once your speech has been turned into words, Rustleaf writes those words down so the hub
+    can show you your own history and word counts. Alongside each entry it records the time,
+    how long you spoke, and <strong>the name of the app you were dictating into</strong>.
+    Commands you say out loud are recorded the same way.
+  </p>
+  <p>
+    This is a plain text file on your computer. It is not encrypted, and anyone who can use
+    your Windows account can read it &mdash; the same as any document you save. You can
+    delete any single line from the hub, or clear the lot from
+    <strong>Settings &rarr; Your data &rarr; Forget</strong>.
+  </p>
+
+  <h3>Your settings</h3>
+  <p>
+    Your commands, dictionary, snippets and preferences are kept in the same place, so Rustleaf
+    can remember them between sessions.
+  </p>
+
+  <h2>Where all of this lives</h2>
+  <p>Everything above is stored on your own computer, in one folder:</p>
+  <p class="path">C:\Users\&lt;you&gt;\AppData\Roaming\Rustleaf</p>
+  <p>
+    If you installed Rustleaf from the Microsoft Store, Windows keeps it in that app&rsquo;s own
+    private folder instead. Either way, <strong>Settings &rarr; Your data &rarr; Show me my
+    files</strong> opens the exact location. You can read, copy, back up or delete any of it
+    at any time. Uninstalling Rustleaf offers to remove it.
+  </p>
+
+  <h2>What leaves your computer</h2>
+  <p>
+    Two things, both of which you start, and neither of which carries anything you have said.
+  </p>
+
+  <h3>Downloading the speech engine</h3>
+  <p>
+    Rustleaf is small; the engine that recognises speech is not. When you choose to set it up,
+    Rustleaf downloads it directly from the projects that publish it &mdash; <strong>GitHub</strong>
+    and <strong>Hugging Face</strong>. As with any download, those services can see your IP
+    address and which file you asked for. They receive nothing else, and nothing from Rustleaf.
+  </p>
+  <p>
+    If you installed from the Microsoft Store, the engine comes in the package and this
+    download does not happen at all, unless you later ask for the graphics card version.
+  </p>
+
+  <h3>Websites you asked Rustleaf to open</h3>
+  <p>
+    If you set up a command that opens a website, saying it opens that site in your browser,
+    exactly as clicking a link would. Rustleaf is not involved beyond opening it.
+  </p>
+
+  <h2>What Rustleaf never does</h2>
+  <div class="scroller">
+    <table>
+      <tbody>
+        <tr><td>Upload your voice or your words</td><td class="no">Never</td></tr>
+        <tr><td>Send usage statistics or analytics</td><td class="no">Never</td></tr>
+        <tr><td>Ask you to make an account</td><td class="no">Never</td></tr>
+        <tr><td>Show advertising</td><td class="no">Never</td></tr>
+        <tr><td>Sell or share anything with anyone</td><td class="no">Never</td></tr>
+        <tr><td>Record when you are not holding the keys</td><td class="no">Never</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Permissions Rustleaf asks for</h2>
+  <ul>
+    <li>
+      <strong>Your microphone</strong>, so it can hear you. Windows asks you the first time,
+      and you can withdraw it whenever you like in Windows privacy settings. Rustleaf only
+      records while you are holding the keys.
+    </li>
+    <li>
+      <strong>Watching for the keys you hold.</strong> Rustleaf needs to notice your shortcut
+      while you are working in another app, so it watches for that key combination across
+      Windows. It looks only for the keys you chose to hold; it does not read, record or store
+      anything else you type.
+    </li>
+    <li>
+      <strong>Typing into other apps.</strong> To put your words where your cursor is, Rustleaf
+      pastes into whatever you were typing in, then puts your clipboard back as it was. To
+      decide whether there is somewhere to type at all, it asks Windows what kind of thing
+      currently has your keyboard &mdash; not what is written in it.
+    </li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>
+    Rustleaf is not aimed at children and collects nothing about anybody, so there is nothing
+    held about a child or anyone else.
+  </p>
+
+  <h2>Changes to this policy</h2>
+  <p>
+    If Rustleaf ever changes what it does with your information, this page changes first and the
+    date at the top changes with it. If a future version ever sends anything off your computer,
+    it will ask you plainly and let you say no.
+  </p>
+
+  <h2>Getting in touch</h2>
+  <p>
+    Questions about any of this, or a request to have something explained, can go to
+    <a href="mailto:malix.kayat@gmail.com">malix.kayat@gmail.com</a>.
+  </p>
+
+  <footer>
+    <p>
+      Rustleaf is made by Malik Alkhayat. This policy covers the Rustleaf desktop application for
+      Windows and nothing else. &nbsp;<a href="index.html">Home</a>
+    </p>
+  </footer>
+
+</div>
+</body>
+</html>

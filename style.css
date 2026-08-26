@@ -1,0 +1,186 @@
+/*
+  Rustleaf's two pages.
+
+  The same coal and moonlit green as the app, so the site and the program look
+  like the same thing. Green is only ever on something you can act on or
+  something being claimed - never used as decoration.
+*/
+
+:root {
+  --ground:    #0C0D0E;
+  --raise:     #141618;
+  --raise-hi:  #1B1E21;
+  --line:      #262A2E;
+  --line-soft: #1C2023;
+  --ink:       #E8EAE6;
+  --quiet:     #868E88;
+  --leaf:      #4AB06C;
+  --leaf-dim:  #2A6040;
+  --leaf-wash: #101E16;
+  --clay:      #CB7454;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { animation: none !important; transition: none !important; }
+}
+
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 18px;
+  line-height: 1.68;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+
+/* ------------------------------------------------------------------ masthead */
+.mast {
+  display: flex; align-items: center; gap: 14px;
+  padding: 30px 0 0;
+}
+.mast svg { width: 30px; height: 30px; flex: none; }
+.mast b {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 17px; font-weight: 500; letter-spacing: .02em;
+}
+.mast a { margin-left: auto; color: var(--quiet); font-size: 15px; text-decoration: none; }
+.mast a:hover { color: var(--leaf); }
+
+/* ---------------------------------------------------------------------- hero */
+.hero { padding: 74px 0 8px; }
+h1 {
+  font-weight: 700;
+  font-size: clamp(40px, 7.5vw, 62px);
+  line-height: 1.03;
+  letter-spacing: -.022em;
+  text-wrap: balance;
+  margin: 0 0 20px;
+}
+.lede {
+  font-size: 21px; line-height: 1.55; color: var(--quiet);
+  margin: 0 0 36px; max-width: 34em;
+}
+.lede em { color: var(--ink); font-style: normal; }
+
+/* --------------------------------------------------------------------- get it */
+.get { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; margin-bottom: 14px; }
+.btn {
+  display: inline-block;
+  background: var(--leaf); color: #08130C;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 15px; font-weight: 500; letter-spacing: .01em;
+  text-decoration: none;
+  padding: 14px 26px; border-radius: 7px;
+  border: 1px solid var(--leaf);
+  transition: background .16s ease, transform .16s ease;
+}
+.btn:hover { background: #5CC47D; }
+.btn:active { transform: translateY(1px); }
+.btn.plain { background: transparent; color: var(--ink); border-color: var(--line); }
+.btn.plain:hover { border-color: var(--leaf-dim); background: var(--raise); }
+.btn:focus-visible { outline: 2px solid var(--leaf); outline-offset: 3px; }
+.fine { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 13px; color: var(--quiet); }
+
+/* -------------------------------------------------------------------- sections */
+section { padding: 54px 0; border-top: 1px solid var(--line-soft); margin-top: 54px; }
+h2 {
+  font-weight: 600; font-size: 27px; line-height: 1.25;
+  letter-spacing: -.01em; text-wrap: balance; margin: 0 0 22px;
+}
+h3 { font-weight: 600; font-size: 19px; margin: 34px 0 8px; }
+p { margin: 0 0 18px; }
+a { color: var(--leaf); text-underline-offset: 3px; }
+a:focus-visible { outline: 2px solid var(--leaf); outline-offset: 3px; border-radius: 2px; }
+strong { font-weight: 600; }
+
+/* ---------------------------------------------------------------------- doing */
+.does { display: grid; gap: 2px; margin: 0 0 8px; }
+.does div {
+  display: grid; grid-template-columns: 8em 1fr; gap: 18px;
+  padding: 15px 0; border-bottom: 1px solid var(--line-soft);
+}
+.does dt, .does b {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 12px; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--leaf); font-weight: 500; padding-top: 5px;
+}
+.does span { color: var(--ink); }
+@media (max-width: 560px) {
+  .does div { grid-template-columns: 1fr; gap: 4px; }
+}
+
+/* --------------------------------------------------------------------- claim */
+.claim {
+  background: var(--leaf-wash);
+  border-left: 2px solid var(--leaf);
+  border-radius: 0 6px 6px 0;
+  padding: 24px 26px;
+  margin: 0 0 26px;
+}
+.claim p { margin: 0; font-size: 19px; }
+.claim p + p { margin-top: 12px; }
+
+/* -------------------------------------------------------------------- warning */
+.note {
+  background: var(--raise);
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  padding: 22px 24px;
+  margin: 0 0 22px;
+}
+.note p:last-child { margin-bottom: 0; }
+.note b { color: var(--clay); }
+
+code, .path {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: .82em;
+  background: var(--raise);
+  border: 1px solid var(--line-soft);
+  border-radius: 3px;
+  padding: 2px 6px;
+  word-break: break-word;
+}
+
+ul { margin: 0 0 18px; padding-left: 22px; }
+li { margin-bottom: 10px; }
+
+.scroller { overflow-x: auto; margin: 0 0 22px; }
+table { border-collapse: collapse; width: 100%; min-width: 440px; font-size: 16px; }
+th {
+  text-align: left;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-weight: 500; font-size: 11px;
+  letter-spacing: .1em; text-transform: uppercase;
+  color: var(--quiet);
+  padding: 0 16px 9px 0;
+  border-bottom: 1px solid var(--line);
+}
+td { padding: 12px 16px 12px 0; border-bottom: 1px solid var(--line-soft); vertical-align: top; }
+tbody tr:last-child td { border-bottom: 1px solid var(--line); }
+td.no { color: var(--leaf); font-weight: 600; white-space: nowrap; }
+
+/* -------------------------------------------------------------------- footer */
+footer {
+  border-top: 1px solid var(--line);
+  margin-top: 60px; padding: 30px 0 70px;
+  color: var(--quiet); font-size: 15px;
+}
+footer a { color: var(--quiet); }
+footer a:hover { color: var(--leaf); }
+
+/* the privacy page reads like a document, not a pitch */
+.when { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 13px; color: var(--quiet); margin: 0; }
+.doc-head { padding: 66px 0 24px; border-bottom: 1px solid var(--line); margin-bottom: 34px; }
+.doc-head h1 { font-size: clamp(34px, 6vw, 48px); margin-bottom: 16px; }
+.eyebrow {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 11.5px; letter-spacing: .16em; text-transform: uppercase;
+  color: var(--leaf); margin: 0 0 18px;
+}
