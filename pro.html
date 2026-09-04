@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rustle Pro: buy it once, keep it</title>
+<meta name="description" content="Rustle Pro turns what you said into what you meant, on your own computer. $29 once, yours forever, and it still runs entirely on your own computer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+<style>
+  /* Only what this page needs beyond the shared sheet. */
+  .price-line {
+    display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap;
+    margin: 0 0 30px;
+  }
+  .price-line .amount {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 44px; font-weight: 500; letter-spacing: -.02em; color: var(--ink);
+  }
+  .price-line .once { color: var(--quiet); font-size: 18px; }
+
+  .adds { display: grid; gap: 2px; margin: 0 0 10px; }
+  .adds article {
+    padding: 22px 0; border-bottom: 1px solid var(--line-soft);
+  }
+  .adds article:first-child { border-top: 1px solid var(--line); }
+  .adds h3 { margin: 0 0 8px; font-size: 20px; }
+  .adds p { margin: 0; color: var(--quiet); }
+  .adds p em { color: var(--ink); font-style: normal; }
+
+  .warn-quote {
+    background: var(--raise); border: 1px solid var(--line);
+    border-left: 2px solid var(--clay);
+    border-radius: 0 7px 7px 0;
+    padding: 24px 26px; margin: 0 0 22px;
+  }
+  .warn-quote p:last-child { margin-bottom: 0; }
+  .warn-quote strong { color: var(--clay); }
+
+  td.yes { color: var(--leaf); font-weight: 600; white-space: nowrap; }
+  td.nope { color: var(--quiet); white-space: nowrap; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="mast">
+    <svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M0 24 C0 3.6 13.2 0 24 0 C20.4 24 10.8 24 0 24 Z" fill="#4AB06C"/>
+      <path d="M0 24 L24 0" stroke="#0C0D0E" stroke-width="1.7"/>
+    </svg>
+    <b>Rustle</b>
+    <a href="index.html">The free version</a>
+  </header>
+
+  <div class="hero">
+    <p class="eyebrow">Rustle Pro</p>
+    <h1>Buy it once, keep it.</h1>
+    <p class="lede">
+      The free version hears you. Pro <em>writes for you</em>: ramble, stop, start again,
+      and clean prose comes out. <em>No subscription, no account, no server.</em> The whole
+      thing still runs on your own computer.
+    </p>
+
+    <div class="price-line">
+      <span class="amount">$29</span>
+      <span class="once">once &mdash; yours forever, on every computer you own</span>
+    </div>
+
+    <div class="get">
+      <!-- TODO: replace with the real checkout link once the store is set up -->
+      <a class="btn" href="#buy">Buy Rustle Pro</a>
+      <a class="btn plain" href="index.html">Try the free one first</a>
+    </div>
+    <p class="fine">
+      Windows 10 and 11. Fourteen day refund, no questions.
+      <a href="#warning">Installing from the Microsoft Store</a> avoids the security warning.
+    </p>
+  </div>
+
+  <!-- ===================================================================
+       WHAT PRO ADDS
+
+       This is the only place the feature list lives. Change these three
+       articles and the rest of the page follows: the comparison table below
+       reads from the same names, so keep them in step.
+       =================================================================== -->
+  <section>
+    <h2>What Pro adds</h2>
+
+    <div class="adds">
+
+      <article>
+        <h3>It writes it properly</h3>
+        <p>
+          Ramble, stop, start again, say &ldquo;um&rdquo; &mdash; and clean prose comes out. A small language model runs on your own machine and turns what you said into what you meant. Nothing is sent anywhere.
+        </p>
+      </article>
+
+      <article>
+        <h3>Per-app voices</h3>
+        <p>
+          Full sentences and proper punctuation in your email, short and unbothered in a chat window, no automatic capitals in a code editor. Set the voice once for each program.
+        </p>
+      </article>
+
+      <article>
+        <h3>In your language too</h3>
+        <p>
+          The tidying works in all ninety-nine languages, not only English. Rambling Arabic becomes clean Arabic.
+        </p>
+      </article>
+
+    </div>
+    <p class="fine">Everything in the free version is still in Pro. Nothing was taken out to make room.</p>
+  </section>
+
+  <section>
+    <h2>Free or Pro</h2>
+    <div class="scroller">
+      <table>
+        <thead>
+          <tr><th>&nbsp;</th><th>Free</th><th>Pro</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Voice typing anywhere in Windows</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+          <tr><td>Voice commands to open things</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+          <tr><td>Runs on your own computer</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+          <tr><td>Uses your graphics chip</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+          <tr><td>Follows your keyboard language</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+          <tr><td>Dictionary and snippets</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+          <tr><td>Unlimited dictionary corrections</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+          <tr><td>Turns rambling into clean prose</td><td class="nope">&mdash;</td><td class="yes">Yes</td></tr>
+          <tr><td>A different writing voice per app</td><td class="nope">&mdash;</td><td class="yes">Yes</td></tr>
+          <tr><td>That tidying in all 99 languages</td><td class="nope">&mdash;</td><td class="yes">Yes</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>
+      The free version is on the <a href="index.html">Microsoft Store</a> and it is not a
+      trial. It does not expire, it is not limited by how much you say, and it will keep
+      working whether or not you ever buy this.
+    </p>
+  </section>
+
+  <section id="warning">
+    <h2>If you download it directly, Windows will warn you</h2>
+
+    <div class="note-soft" style="margin-bottom:22px">
+      <p>
+        <strong>The easy way round this: get Rustle from the Microsoft Store.</strong> The
+        Store version is signed by Microsoft, so there is no warning at all, and you can buy
+        Pro from inside it. Everything below applies only if you would rather download it
+        straight from here.
+      </p>
+    </div>
+
+    <div class="warn-quote">
+      <p>
+        Rustle is not signed with a certificate, so Windows shows a blue box saying
+        <strong>&ldquo;Windows protected your PC&rdquo;</strong>. It does that for every
+        program from a developer it has not seen before, whatever the program does.
+      </p>
+      <p>
+        Click <strong>More info</strong>, then <strong>Run anyway</strong>.
+      </p>
+      <p>
+        A certificate costs a few hundred dollars a year and buys nothing except the absence
+        of that box. When enough people have bought Rustle to cover it, I will get one. Until
+        then I would rather explain the warning than charge you for its removal.
+      </p>
+      <p>
+        If that is not good enough, <a href="index.html">the free version is on the Microsoft
+        Store</a>, signed by Microsoft, with no warning at all.
+      </p>
+    </div>
+
+    <p class="fine">
+      Rustle will never ask you to turn off your antivirus or add an exclusion. If anything
+      claiming to be Rustle does, it is not Rustle.
+    </p>
+  </section>
+
+  <section>
+    <h2>The boring, important part</h2>
+
+    <h3>What happens after you pay</h3>
+    <p>
+      You get a licence key by email, immediately. Paste it into Rustle once and that is the
+      last you think about it. It works on <strong>every computer you own</strong> - your
+      desktop, your laptop, and the one you have not bought yet. Nothing counts them,
+      because there is no server to count with.
+    </p>
+    <p>
+      It is the same key whether you installed Rustle from the Microsoft Store or from here,
+      so you are not locked into whichever you picked first.
+    </p>
+
+    <h3>If the internet is down</h3>
+    <p>
+      Rustle keeps working. The key is checked when you first enter it and then only
+      occasionally, and a check that fails never stops you dictating. An app that dies
+      because a server did not answer is not one you should trust with your work.
+    </p>
+
+    <h3>Refunds</h3>
+    <p>
+      Fourteen days, no questions, no form. Email and it is done.
+    </p>
+
+    <h3>Updates</h3>
+    <p>
+      Included, for as long as Rustle exists. There is no version two waiting to charge you
+      again.
+    </p>
+
+    <h3>Your words</h3>
+    <p>
+      Exactly as private as the free version: everything is turned into text on your own
+      machine and nothing you say leaves it. Buying Pro does not add a server, because there
+      is no server. See the <a href="privacy.html">privacy policy</a>.
+    </p>
+  </section>
+
+  <section>
+    <div class="claim">
+      <p>Buy it once. Keep it. Use it on every computer you own.</p>
+      <p>If it is not for you, fourteen days and your money comes back.</p>
+    </div>
+    <div class="get">
+      <!-- TODO: replace with the real checkout link once the store is set up -->
+      <a class="btn" href="#buy">Buy Rustle Pro &mdash; $29</a>
+      <a class="btn plain" href="index.html">Get the free one</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      Rustle is made by Malix. <a href="index.html">The free version</a> &middot;
+      <a href="privacy.html">Privacy</a>
+    </p>
+    <p>
+      Speech is turned into text by <a href="https://github.com/ggml-org/whisper.cpp">whisper.cpp</a>,
+      running on your own computer.
+    </p>
+  </footer>
+
+</div>
+
+</body>
+</html>
