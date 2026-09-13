@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy policy for Rustleaf</title>
-<meta name="description" content="Rustleaf does not send your voice, or anything you say, anywhere. Here is exactly what it keeps and where.">
+<title>Privacy policy for Rustle</title>
+<meta name="description" content="Rustle does not send your voice, or anything you say, anywhere. Here is exactly what it keeps and where.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -19,94 +19,133 @@
       <path d="M0 24 C0 3.6 13.2 0 24 0 C20.4 24 10.8 24 0 24 Z" fill="#4AB06C"/>
       <path d="M0 24 L24 0" stroke="#0C0D0E" stroke-width="1.7"/>
     </svg>
-    <b>Rustleaf</b>
+    <b>Rustle</b>
     <a href="index.html">Home</a>
   </header>
 
   <div class="doc-head">
-    <p class="eyebrow">Rustleaf</p>
+    <p class="eyebrow">Rustle</p>
     <h1>Privacy policy</h1>
-    <p class="when">Last updated 26 August 2026</p>
+    <p class="when">Last updated 13 September 2026</p>
   </div>
 
   <div class="claim">
-    <p><strong>Rustleaf does not send your voice, or anything you say, anywhere.</strong></p>
+    <p><strong>Rustle does not send your voice, or anything you say, anywhere.</strong></p>
     <p>
-      There is no Rustleaf server. There is no account. Nothing you dictate is uploaded,
-      analysed, or seen by anyone but you. The speech recognition runs on your own computer.
+      There is no Rustle server and no account. Nothing you dictate is uploaded or analysed,
+      and nobody sees it but you. The speech recognition runs on your own computer.
     </p>
   </div>
 
   <p>
-    That is the whole policy in two sentences. The rest of this page explains exactly what
-    Rustleaf touches and where it is kept, because a promise like that is only worth anything
-    if you can check it.
+    The rest of this page sets out what Rustle touches and where it keeps things, so you can
+    check it for yourself instead of taking it on trust.
   </p>
 
-  <h2>What Rustleaf records</h2>
+  <h2>What Rustle records</h2>
 
-  <h3>Your voice</h3>
+  <h3 id="voice">Your voice</h3>
   <p>
-    While you hold the keys, Rustleaf records from your microphone to a temporary file on your
-    own computer. It hands that file to the speech engine, which is also running on your
-    machine and cannot be reached from anywhere else, then <strong>deletes the recording
-    straight away</strong>. Nothing is uploaded.
+    While you hold the keys, Rustle records from your microphone into a temporary file on your
+    computer. It passes that file to the speech engine, which also runs on your machine and
+    cannot be reached from outside it, and then <strong>deletes the recording</strong>. Nothing
+    is uploaded.
+  </p>
+  <p>
+    <strong>Listening for "Hey Rustle" works differently, and it is switched on when you
+    install Rustle.</strong> Rustle can only hear its name if it is already listening, so while
+    this setting is on, the microphone stays open. The last thirty seconds of sound are kept in
+    memory and continually written over. Rustle keeps checking the most recent two or three
+    seconds for its name. Stretches with no voice in them are skipped. The rest are written to a
+    temporary file for the speech engine to read, and <strong>deleted as soon as it has read
+    them</strong>. None of that sound is saved, and none of it leaves your computer.
+  </p>
+  <p>
+    If you would rather the microphone stayed closed until you hold the keys, turn off
+    <strong>Settings &rarr; Commands &rarr; Listen for "Hey Rustle"</strong>.
   </p>
 
   <h3>What you said</h3>
   <p>
-    Once your speech has been turned into words, Rustleaf writes those words down so the hub
-    can show you your own history and word counts. Alongside each entry it records the time,
-    how long you spoke, and <strong>the name of the app you were dictating into</strong>.
-    Commands you say out loud are recorded the same way.
+    Once your speech has been turned into words, Rustle writes those words down so the hub can
+    show your history and word counts. Each entry also records the time, how long you spoke, and
+    <strong>the name of the app you were dictating into</strong>. Commands you say out loud are
+    recorded the same way.
   </p>
   <p>
-    This is a plain text file on your computer. It is not encrypted, and anyone who can use
-    your Windows account can read it, the same as any document you save. You can
-    delete any single line from the hub, or clear the lot from
+    This is a plain text file on your computer. It is not encrypted, so anyone who can use your
+    Windows account can read it, as they could any document you save. You can delete a single
+    line from the hub, or clear all of it from
     <strong>Settings &rarr; Your data &rarr; Forget</strong>.
   </p>
 
-  <h3>Your settings</h3>
+  <h3>Your settings and your licence</h3>
   <p>
-    Your commands, dictionary, snippets and preferences are kept in the same place, so Rustleaf
-    can remember them between sessions.
+    Your commands, dictionary, snippets and preferences are kept in the same place, so Rustle
+    remembers them. If you buy Rustle Pro, the email address and licence key you enter are
+    stored there as well. Rustle checks the key on your own computer and never sends it anywhere
+    to be checked.
+  </p>
+
+  <h3>The programs installed on your computer</h3>
+  <p>
+    When you press <strong>Add from this PC</strong> on the Commands page, Rustle reads the list
+    of programs and games installed on your computer so you can choose which ones to open by
+    voice. It reads the list when you ask, and it does not send it anywhere.
   </p>
 
   <h2>Where all of this lives</h2>
-  <p>Everything above is stored on your own computer, in one folder:</p>
-  <p class="path">C:\Users\&lt;you&gt;\AppData\Roaming\Rustleaf</p>
+  <p>Everything above is stored on your computer, in one folder:</p>
+  <p class="path">C:\Users\&lt;you&gt;\AppData\Roaming\Rustle</p>
   <p>
-    If you installed Rustleaf from the Microsoft Store, Windows keeps it in that app&rsquo;s own
-    private folder instead. Either way, <strong>Settings &rarr; Your data &rarr; Show me my
-    files</strong> opens the exact location. You can read, copy, back up or delete any of it
-    at any time. Uninstalling Rustleaf offers to remove it.
+    If you installed Rustle from the Microsoft Store, Windows keeps it in that app's own private
+    folder instead. <strong>Settings &rarr; Your data &rarr; Show me my files</strong> opens the
+    right folder either way. You can read, copy, back up or delete any of it whenever you like,
+    and uninstalling Rustle offers to remove it.
   </p>
 
   <h2>What leaves your computer</h2>
   <p>
-    Two things, and you start both of them. Neither one carries anything you have said.
+    Rustle goes online for the three reasons below. None of them sends anything you have said or
+    typed.
   </p>
 
-  <h3>Downloading the speech engine</h3>
+  <h3>Downloads you ask for</h3>
   <p>
-    Rustleaf is small; the engine that recognises speech is not. When you choose to set it up,
-    Rustleaf downloads it straight from the two projects that publish it: <strong>GitHub</strong>
-    and <strong>Hugging Face</strong>. As with any download, those services can see your IP
-    address and which file you asked for. They get nothing else, and nothing from Rustleaf.
+    The speech engine is too big to include in the small download, so Rustle fetches it the
+    first time you set it up, directly from <strong>GitHub</strong> and <strong>Hugging
+    Face</strong>. The writing model for Rustle Pro comes from the same two places, and only if
+    you switch that feature on. As with any download, those services can see your IP address and
+    which file was requested. They receive nothing else from Rustle.
   </p>
   <p>
-    If you installed from the Microsoft Store, the engine comes in the package and this
-    download does not happen at all, unless you later ask for the graphics card version.
-  </p>
-
-  <h3>Websites you asked Rustleaf to open</h3>
-  <p>
-    If you set up a command that opens a website, then saying it opens that site in your
-    browser, exactly as clicking a link would. Rustleaf does nothing else with it.
+    A copy from the Microsoft Store already has the speech engine inside it, so it skips that
+    download unless you later ask for the version that runs on an NVIDIA graphics card.
   </p>
 
-  <h2>What Rustleaf never does</h2>
+  <h3>Checking for a newer version</h3>
+  <p>
+    A copy downloaded from this website asks GitHub once a day whether a newer version of Rustle
+    has been released. The request includes the version number you have, and GitHub can see your
+    IP address, as with any web request. Nothing else is sent. You can turn this off in
+    <strong>Settings &rarr; Rustle itself &rarr; Look for new versions</strong>. A copy from the
+    Microsoft Store never does this, because the Store takes care of its updates.
+  </p>
+
+  <h3>Websites you open</h3>
+  <p>
+    A command that opens a website, or a button in Rustle that links to this site, opens the page
+    in your browser, the same as clicking a link. Rustle does nothing else with it.
+  </p>
+
+  <h2>Buying Rustle Pro</h2>
+  <p>
+    Rustle Pro is paid for on a checkout page run by a payment company, not by Rustle. The email
+    address and payment details you enter there go to that company and are covered by its own
+    privacy policy. Rustle never sees your payment details.
+  </p>
+
+  <h2>What Rustle never does</h2>
   <div class="scroller">
     <table>
       <tbody>
@@ -114,55 +153,57 @@
         <tr><td>Send usage statistics or analytics</td><td class="no">Never</td></tr>
         <tr><td>Ask you to make an account</td><td class="no">Never</td></tr>
         <tr><td>Show advertising</td><td class="no">Never</td></tr>
-        <tr><td>Sell or share anything with anyone</td><td class="no">Never</td></tr>
-        <tr><td>Record when you are not holding the keys</td><td class="no">Never</td></tr>
+        <tr><td>Sell or share your information</td><td class="no">Never</td></tr>
+        <tr><td>Keep a recording after it has been turned into words</td><td class="no">Never</td></tr>
       </tbody>
     </table>
   </div>
 
-  <h2>Permissions Rustleaf asks for</h2>
+  <h2>Permissions Rustle asks for</h2>
   <ul>
     <li>
-      <strong>Your microphone</strong>, so it can hear you. Windows asks you the first time,
-      and you can withdraw it whenever you like in Windows privacy settings. Rustleaf only
-      records while you are holding the keys.
+      <strong>Your microphone</strong>, so it can hear you. Windows asks the first time, and you
+      can take the permission away at any time in Windows privacy settings. Rustle records while
+      you hold the keys, and keeps the microphone open while "Hey Rustle" is switched on.
+      <a href="#voice">Your voice</a>, above, explains what happens to that sound.
     </li>
     <li>
-      <strong>Watching for your hold keys</strong>, so it knows when you are talking to it.
-      That has to work while you are busy in another app, so Rustleaf watches for the
-      combination across Windows. It looks only for the keys you chose. It does not read,
-      record or store anything else you type.
+      <strong>Watching for your keys</strong>, so it knows when you are talking to it. This has to
+      work while you are in another app, so Rustle watches the keyboard across Windows. It looks
+      only for the keys you chose, and it does not read or store anything else you type.
     </li>
     <li>
-      <strong>Typing into other apps</strong>, so your words land where your cursor is.
-      Rustleaf pastes into whatever you were typing in, then puts your clipboard back the way
-      it found it. To work out whether there is anywhere to type at all, it asks Windows what
-      kind of thing currently has your keyboard. It never asks what is written in it.
+      <strong>Typing into other apps</strong>, so your words appear where your cursor is. Rustle
+      types them in the way a keyboard would. A few programs, mostly command windows, do not
+      accept that, and for those Rustle pastes the words and then puts your clipboard back the way
+      it was. If there is nowhere to type at all, it leaves the words on your clipboard so you can
+      paste them yourself. To tell whether there is anywhere to type, it asks Windows what kind of
+      box your cursor is in. It never reads what is written there.
     </li>
   </ul>
 
   <h2>Children</h2>
   <p>
-    Rustleaf is not aimed at children. It collects nothing about anybody, so there is nothing
-    held about a child either.
+    Rustle is not made for children. It does not collect information about anyone, so it holds
+    nothing about children either.
   </p>
 
   <h2>Changes to this policy</h2>
   <p>
-    If Rustleaf ever changes what it does with your information, this page changes first and the
-    date at the top changes with it. If a future version ever sends anything off your computer,
-    it will ask you plainly and let you say no.
+    If Rustle changes what it does with your information, this page changes first, along with the
+    date at the top. If a future version would send anything about you, or anything you have said,
+    off your computer, it will ask you first and you can say no.
   </p>
 
   <h2>Getting in touch</h2>
   <p>
-    If any of this is unclear, or you want something explained properly, write to
+    Questions about any of this can go to
     <a href="mailto:malix.kayat@gmail.com">malix.kayat@gmail.com</a>.
   </p>
 
   <footer>
     <p>
-      Rustleaf is made by Malik Alkhayat. This policy covers the Rustleaf desktop application for
+      Rustle is made by Malik Alkhayat. This policy covers the Rustle desktop application for
       Windows and nothing else. &nbsp;<a href="index.html">Home</a>
     </p>
   </footer>
