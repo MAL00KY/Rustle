@@ -7,12 +7,12 @@ Rustle runs on your own computer. Nothing you say is uploaded, and there is no a
 ## Get it
 
 - **Website:** https://mal00ky.github.io/Rustle/
-- **Download for Windows:** https://github.com/MAL00KY/Rustle/releases/latest/download/Rustle.Setup.exe
+- **Microsoft Store:** coming soon
 - **Rustle Pro:** https://mal00ky.github.io/Rustle/pro.html
 
 ## What is in this repository
 
-This repository holds the Rustle website and the installer on the Releases page. The app's source code is not published here.
+This repository holds the Rustle website and the files the app downloads. The app's source code is not published here.
 
 ## Privacy
 
