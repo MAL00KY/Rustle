@@ -76,8 +76,7 @@
     </div>
 
     <div class="get">
-      <!-- TODO: replace with the real checkout link once the store is set up -->
-      <a class="btn" href="#buy">Buy Rustle Pro</a>
+      <a class="btn buy-pro" href="#buy">Buy Rustle Pro</a>
       <a class="btn plain" href="index.html">Try the free one first</a>
     </div>
     <p class="fine">
@@ -193,7 +192,7 @@
 
     <h3>What happens after you pay</h3>
     <p>
-      You get a licence key by email. Paste it into Rustle once and you can forget
+      You get a licence key by email. If it has not arrived within a day, write to <a href="mailto:malix.kayat@gmail.com">malix.kayat@gmail.com</a>. Paste the key into Rustle once and you can forget
       about it. The key works on <strong>every computer you own</strong>, including ones you have
       not bought yet. Nothing counts your computers, because there is no server to count them.
     </p>
@@ -210,7 +209,7 @@
 
     <h3>Refunds</h3>
     <p>
-      You have fourteen days. Send an email and your money comes back, with no form to fill in.
+      You have fourteen days. <a href="mailto:malix.kayat@gmail.com">Send an email</a> and your money comes back, with no form to fill in.
       The <a href="refund.html">refund policy</a> has the details.
     </p>
 
@@ -235,8 +234,7 @@
       <p>If it is not for you, you have fourteen days to get your money back.</p>
     </div>
     <div class="get">
-      <!-- TODO: replace with the real checkout link once the store is set up -->
-      <a class="btn" href="#buy">Buy Rustle Pro for $29</a>
+      <a class="btn buy-pro" href="#buy">Buy Rustle Pro for $29</a>
       <a class="btn plain" href="index.html">Get the free one</a>
     </div>
   </section>
@@ -246,7 +244,8 @@
       Rustle is made by Malik Alkhayat. <a href="index.html">The free version</a> &middot;
       <a href="privacy.html">Privacy</a> &middot;
       <a href="terms.html">Terms</a> &middot;
-      <a href="refund.html">Refunds</a>
+      <a href="refund.html">Refunds</a> &middot;
+      <a href="mailto:malix.kayat@gmail.com">malix.kayat@gmail.com</a>
     </p>
     <p>
       Speech is turned into text by <a href="https://github.com/ggml-org/whisper.cpp">whisper.cpp</a>,
@@ -256,5 +255,33 @@
 
 </div>
 
+<script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+<script>
+  // Paddle's checkout opens on top of this page. The token is Paddle's public
+  // client-side token, made to sit in a web page; it is not the secret API key.
+  (function () {
+    var ready = false;
+    try {
+      Paddle.Initialize({ token: 'live_49ed35c76ced5c42bfe55c69353' });
+      ready = true;
+    } catch (e) {}
+
+    var buttons = document.querySelectorAll('.buy-pro');
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].addEventListener('click', function (e) {
+        e.preventDefault();
+        if (!ready || !window.Paddle) {
+          // The checkout script was blocked or did not load. Offer the email instead.
+          window.location.href = 'mailto:malix.kayat@gmail.com?subject=Buying%20Rustle%20Pro';
+          return;
+        }
+        Paddle.Checkout.open({
+          items: [{ priceId: 'pri_01m2gccyf9966183ef5xdgn5wv', quantity: 1 }],
+          settings: { theme: 'dark' }
+        });
+      });
+    }
+  })();
+</script>
 </body>
 </html>
