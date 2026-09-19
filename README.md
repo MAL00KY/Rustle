@@ -7,7 +7,7 @@ Rustle runs on your own computer. Nothing you say is uploaded, and there is no a
 ## Get it
 
 - **Website:** https://mal00ky.github.io/Rustle/
-- **Microsoft Store:** coming soon
+- **Microsoft Store:** https://apps.microsoft.com/detail/9N03MH842P4Q
 - **Rustle Pro:** https://mal00ky.github.io/Rustle/pro.html
 
 ## What is in this repository
