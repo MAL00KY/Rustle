@@ -5,12 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy policy for Rustle</title>
 <meta name="description" content="Rustle does not send your voice, or anything you say, anywhere. Here is exactly what it keeps and where.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<a class="skip" href="#main">Skip to the content</a>
 
 <div class="wrap">
 
@@ -20,7 +19,7 @@
       <path d="M0 24 L24 0" stroke="#0C0D0E" stroke-width="1.7"/>
     </svg>
     <b>Rustle</b>
-    <nav style="margin-left:auto; display:flex; flex-wrap:wrap; justify-content:flex-end; gap:6px 18px;">
+    <nav aria-label="Rustle" style="margin-left:auto; display:flex; flex-wrap:wrap; justify-content:flex-end; gap:6px 18px;">
       <a href="index.html" style="margin-left:0">Home</a>
       <a href="pro.html" style="margin-left:0">Rustle Pro</a>
       <a href="terms.html" style="margin-left:0">Terms</a>
@@ -28,10 +27,12 @@
     </nav>
   </header>
 
+  <main id="main" tabindex="-1">
+
   <div class="doc-head">
     <p class="eyebrow">Rustle</p>
     <h1>Privacy policy</h1>
-    <p class="when">Last updated 13 September 2026</p>
+    <p class="when">Last updated 30 September 2026</p>
   </div>
 
   <div class="claim">
@@ -43,11 +44,19 @@
   </div>
 
   <p>
-    The rest of this page sets out what Rustle touches and where it keeps things, so you can
-    check it for yourself instead of taking it on trust.
+    The rest of this page sets out what the Rustle app touches and where it keeps things, what
+    happens when you buy Rustle Pro, and what this website does, so you can check it for yourself
+    instead of taking it on trust.
   </p>
 
-  <h2>What Rustle records</h2>
+  <h2>Who is responsible</h2>
+  <p>
+    Rustle is made and sold by Malik Alkhayat, publishing as Malix, in Jeddah, Saudi Arabia. Where
+    this page talks about information I receive, I am the one responsible for it. You can reach me
+    at <a href="mailto:malix.kayat@gmail.com">malix.kayat@gmail.com</a>.
+  </p>
+
+  <h2>What the app records</h2>
 
   <h3 id="voice">Your voice</h3>
   <p>
@@ -59,15 +68,16 @@
   <p>
     <strong>Listening for "Hey Rustle" works differently, and it is switched on when you
     install Rustle.</strong> Rustle can only hear its name if it is already listening, so while
-    this setting is on, the microphone stays open. The last thirty seconds of sound are kept in
-    memory and continually written over. Rustle keeps checking the most recent two or three
-    seconds for its name. Stretches with no voice in them are skipped. The rest are written to a
-    temporary file for the speech engine to read, and <strong>deleted as soon as it has read
-    them</strong>. None of that sound is saved, and none of it leaves your computer.
+    this setting is on, the microphone stays open. Up to the last ten minutes of sound are kept
+    in memory and continually written over, so that a long dictation is never cut short. Rustle
+    keeps checking the most recent two or three seconds for its name. Stretches with no voice in
+    them are skipped. The rest are written to a temporary file for the speech engine to read, and
+    <strong>deleted as soon as it has read them</strong>. None of that sound is saved, it is gone
+    from memory when Rustle closes, and none of it leaves your computer.
   </p>
   <p>
     If you would rather the microphone stayed closed until you hold the keys, turn off
-    <strong>Settings &rarr; Commands &rarr; Listen for "Hey Rustle"</strong>.
+    <strong>Settings &rarr; Commands &rarr; Listen for "Hey Rustle" without holding anything</strong>.
   </p>
 
   <h3>What you said</h3>
@@ -80,8 +90,18 @@
   <p>
     This is a plain text file on your computer. It is not encrypted, so anyone who can use your
     Windows account can read it, as they could any document you save. You can delete a single
-    line from the hub, or clear all of it from
-    <strong>Settings &rarr; Your data &rarr; Forget</strong>.
+    line from the hub, or all of it with
+    <strong>Settings &rarr; Careful with these &rarr; Forget everything I have said</strong>.
+  </p>
+
+  <h3>A log of what Rustle did</h3>
+  <p>
+    So that a problem can be traced, Rustle keeps a log file beside your settings: when it
+    started, which engine it used, how many words it typed and into which app, and anything that
+    went wrong. It does not log your dictation, but it does log the words of commands, and now and
+    then a single name or number from a sentence Rustle Pro chose not to tidy. The log stays on
+    your computer. Nobody sees it unless you send it to someone yourself. If Rustle ever crashes, it
+    writes what went wrong to a file in the Windows temporary folder, which holds no speech.
   </p>
 
   <h3>Your settings and your licence</h3>
@@ -99,6 +119,15 @@
     voice. It reads the list when you ask, and it does not send it anywhere.
   </p>
 
+  <h3>If Wispr Flow does the listening</h3>
+  <p>
+    If you already use Wispr Flow and turn off <strong>Use Rustle's own ears</strong>, Rustle
+    runs your commands from what you say to Flow instead. To do that it reads Flow's history file
+    on your computer as Flow adds to it, without changing it, and looks for commands in the newest
+    entries. It keeps nothing from that file except the commands it runs, which are recorded in the
+    hub like any other.
+  </p>
+
   <h2>Where all of this lives</h2>
   <p>Everything above is stored on your computer, in one folder:</p>
   <p class="path">C:\Users\&lt;you&gt;\AppData\Roaming\Rustle</p>
@@ -111,28 +140,24 @@
 
   <h2>What leaves your computer</h2>
   <p>
-    Rustle goes online for the three reasons below. None of them sends anything you have said or
-    typed.
+    The app goes online for the reasons below. None of them sends anything you have said or typed.
   </p>
 
-  <h3>Downloads you ask for</h3>
+  <h3>Downloads you choose</h3>
   <p>
-    The speech engine is too big to include in the small download, so Rustle fetches it the
-    first time you set it up, directly from <strong>GitHub</strong> and <strong>Hugging
-    Face</strong>. The writing model for Rustle Pro comes from the same two places, and only if
-    you switch that feature on. As with any download, those services can see your IP address and
-    which file was requested. They receive nothing else from Rustle.
-  </p>
-  <p>
-    A copy from the Microsoft Store already has the speech engine inside it, so it skips that
-    download unless you later ask for the version that runs on an NVIDIA graphics card.
+    Some parts are too big to include in the app, so Rustle offers to fetch them: a faster speech
+    engine for an NVIDIA graphics card, a larger speech model, and the writing model for Rustle
+    Pro. They come directly from <strong>GitHub</strong> and <strong>Hugging Face</strong>, and
+    only when you choose them. As with any download, those services can see your IP address and
+    which file was requested. They receive nothing else from Rustle. Before anything downloaded is
+    used, Rustle checks it is exactly the file its publisher released, and refuses it if not.
   </p>
 
   <h3>Checking for a newer version</h3>
   <p>
-    A copy downloaded from this website asks GitHub once a day whether a newer version of Rustle
-    has been released. The request includes the version number you have, and GitHub can see your
-    IP address, as with any web request. Nothing else is sent. You can turn this off in
+    A copy of Rustle downloaded from GitHub rather than the Store asks GitHub once a day whether a
+    newer version has been released. The request includes the version number you have, and GitHub
+    can see your IP address, as with any web request. Nothing else is sent. You can turn this off in
     <strong>Settings &rarr; Rustle itself &rarr; Look for new versions</strong>. A copy from the
     Microsoft Store never does this, because the Store takes care of its updates.
   </p>
@@ -143,19 +168,77 @@
     in your browser, the same as clicking a link. Rustle does nothing else with it.
   </p>
 
+  <h3>What Microsoft tells me</h3>
+  <p>
+    If you installed Rustle from the Microsoft Store, Microsoft gives app makers reports through
+    its developer dashboard: how many people installed the app, from which countries, and technical
+    details of crashes. Windows collects that, not Rustle, under the
+    <a href="https://www.microsoft.com/privacy/privacystatement">Microsoft Privacy Statement</a>
+    and your Windows diagnostic settings. The reports do not tell me who you are.
+  </p>
+
   <h2>Buying Rustle Pro</h2>
   <p>
-    Rustle Pro is paid for on a checkout page run by a payment company, not by Rustle. The email
-    address and payment details you enter there go to that company and are covered by its own
-    privacy policy. Rustle never sees your payment details.
+    Rustle Pro is sold by Paddle.com, which runs the checkout, takes the payment, handles tax and
+    is the merchant of record. What you enter at the checkout goes to Paddle and is covered by
+    <a href="https://www.paddle.com/legal/privacy">Paddle's privacy notice</a>.
+    <strong>I never see your card or bank details.</strong>
+  </p>
+  <p>
+    Paddle shares with me what I need to deliver and support your purchase: your email address, the
+    country and details of your order, and your name if you gave one. A small script on my Google
+    account asks Paddle for new orders every minute and emails your licence key from my Gmail
+    address, so a copy of that email stays in my sent mail, under
+    <a href="https://policies.google.com/privacy">Google's privacy policy</a>. The script remembers
+    only the order number, so nobody is sent a key twice.
+  </p>
+  <p>
+    I use your email address only for your purchase: the licence key, refunds, and answering you
+    when you write. No newsletters and no marketing. I keep these details while you might need
+    support with your purchase, and for as long as the law requires records of sales to be kept.
+    Ask and I will delete anything that the law does not require me to keep.
+  </p>
+
+  <h2>This website</h2>
+  <p>
+    This website is hosted on GitHub Pages. Like any web host, GitHub records the IP address of each
+    visit for security, under the
+    <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub
+    Privacy Statement</a>. The site itself sets no cookies, has no analytics and no advertising,
+    and loads its typefaces from its own folder rather than from another company. Nothing of
+    Paddle's loads until you press a Buy button. The <a href="cookies.html">cookie policy</a> has
+    the details.
+  </p>
+
+  <h2>Your rights</h2>
+  <p>
+    You can ask me what information I hold about you, ask me to correct it, or ask me to delete it,
+    and I will answer within 30 days. You can also ask me to stop using it. These rights come from
+    the law wherever you live, including Saudi Arabia's Personal Data Protection Law and, in Europe
+    and the UK, the GDPR. Write to <a href="mailto:malix.kayat@gmail.com">malix.kayat@gmail.com</a>.
+    Everything the app keeps is already on your own computer, where you can read or delete it
+    yourself.
+  </p>
+  <p>
+    If you are unhappy with how I have handled your information, you can complain to the data
+    protection authority where you live. In Saudi Arabia, that is the Saudi Data and AI Authority
+    (<a href="https://sdaia.gov.sa/en/">SDAIA</a>).
+  </p>
+  <p>
+    Paddle, GitHub, Google and Microsoft are based outside Saudi Arabia, mostly in the UK, Europe
+    and the United States, so what they handle for a purchase or a visit is handled there, under
+    their own policies and the safeguards those require.
   </p>
 
   <h2>What Rustle never does</h2>
   <div class="scroller">
     <table>
+      <thead>
+        <tr><th scope="col">Rustle does not</th><th scope="col"><span class="sr-only">How often</span></th></tr>
+      </thead>
       <tbody>
         <tr><td>Upload your voice or your words</td><td class="no">Never</td></tr>
-        <tr><td>Send usage statistics or analytics</td><td class="no">Never</td></tr>
+        <tr><td>Send usage statistics or analytics of its own</td><td class="no">Never</td></tr>
         <tr><td>Ask you to make an account</td><td class="no">Never</td></tr>
         <tr><td>Show advertising</td><td class="no">Never</td></tr>
         <tr><td>Sell or share your information</td><td class="no">Never</td></tr>
@@ -175,7 +258,8 @@
     <li>
       <strong>Watching for your keys</strong>, so it knows when you are talking to it. This has to
       work while you are in another app, so Rustle watches the keyboard across Windows. It looks
-      only for the keys you chose, and it does not read or store anything else you type.
+      only for the keys you chose, and it does not read or store anything else you type. It also
+      notices which keyboard language is switched on, so it can listen in that language.
     </li>
     <li>
       <strong>Typing into other apps</strong>, so your words appear where your cursor is. Rustle
@@ -189,8 +273,9 @@
 
   <h2>Children</h2>
   <p>
-    Rustle is not made for children. It does not collect information about anyone, so it holds
-    nothing about children either.
+    Rustle is not made for children. The app collects nothing about anyone, so it holds nothing
+    about children either. If a child has bought Rustle Pro, a parent can write to me for a refund
+    and to have the order details removed.
   </p>
 
   <h2>Changes to this policy</h2>
@@ -206,12 +291,22 @@
     <a href="mailto:malix.kayat@gmail.com">malix.kayat@gmail.com</a>.
   </p>
 
+  </main>
+
   <footer>
     <p>
-      Rustle is made by Malik Alkhayat. This policy covers the Rustle desktop application for
-      Windows and nothing else. &nbsp;<a href="index.html">Home</a> &middot;
-      <a href="terms.html">Terms</a> &middot; <a href="refund.html">Refunds</a>
+      Rustle is made and sold by Malik Alkhayat, publishing as Malix, in Jeddah, Saudi Arabia.
+      Rustle Pro is sold through Paddle.com, the merchant of record.
+      <a href="mailto:malix.kayat@gmail.com">malix.kayat@gmail.com</a>
     </p>
+    <p>
+      <a href="index.html">Home</a> &middot;
+      <a href="pro.html">Rustle Pro</a> &middot;
+      <a href="terms.html">Terms</a> &middot;
+      <a href="refund.html">Refunds</a> &middot;
+      <a href="cookies.html">Cookies</a>
+    </p>
+    <p>&copy; 2026 Malik Alkhayat</p>
   </footer>
 
 </div>

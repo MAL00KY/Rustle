@@ -4,10 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Rustle Pro: buy it once, keep it</title>
-<meta name="description" content="Rustle Pro turns what you said into what you meant, in any of 99 languages. $29 once, with no subscription, and it runs entirely on your own computer.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<meta name="description" content="Rustle Pro turns what you said into what you meant, and listens in other languages as well as English. $29 once, with no subscription, and it runs entirely on your own computer.">
 <link rel="stylesheet" href="style.css">
 <style>
   /* Only what this page needs beyond the shared sheet. */
@@ -45,6 +42,8 @@
 </head>
 <body>
 
+<a class="skip" href="#main">Skip to the content</a>
+
 <div class="wrap">
 
   <header class="mast">
@@ -53,7 +52,7 @@
       <path d="M0 24 L24 0" stroke="#0C0D0E" stroke-width="1.7"/>
     </svg>
     <b>Rustle</b>
-    <nav style="margin-left:auto; display:flex; flex-wrap:wrap; justify-content:flex-end; gap:6px 18px;">
+    <nav aria-label="Rustle" style="margin-left:auto; display:flex; flex-wrap:wrap; justify-content:flex-end; gap:6px 18px;">
       <a href="index.html" style="margin-left:0">Home</a>
       <a href="privacy.html" style="margin-left:0">Privacy</a>
       <a href="terms.html" style="margin-left:0">Terms</a>
@@ -61,12 +60,14 @@
     </nav>
   </header>
 
+  <main id="main" tabindex="-1">
+
   <div class="hero">
     <p class="eyebrow">Rustle Pro</p>
     <h1>Buy it once, keep it.</h1>
     <p class="lede">
-      The free version types what you say in English. Pro <em>writes for you</em>, in any of
-      ninety-nine languages: ramble, stop, start again, and a clean sentence comes out. There is
+      The free version types what you say in English. Pro <em>writes for you</em>: ramble, stop,
+      start again, and a clean sentence comes out. It listens in other languages too. There is
       no subscription and no account, and all of it still runs on your own computer.
     </p>
 
@@ -76,12 +77,21 @@
     </div>
 
     <div class="get">
-      <a class="btn buy-pro" href="#buy">Buy Rustle Pro</a>
+      <button type="button" class="btn buy-pro">Buy Rustle Pro</button>
       <a class="btn plain" href="index.html">Try the free one first</a>
     </div>
     <p class="fine">
-      Windows 10 and 11. Fourteen-day refund, no questions asked.
+      Windows 10 and 11. Fourteen-day <a href="refund.html">refund</a>, no questions asked.
     </p>
+    <p class="fine">
+      Checkout is run by Paddle.com, the reseller and merchant of record for Rustle Pro. Pressing
+      Buy loads Paddle's checkout on this page; nothing from Paddle loads before that
+      (<a href="cookies.html">cookies</a>). By buying, you agree to the <a href="terms.html">Terms</a>
+      and <a href="https://www.paddle.com/legal/buyer-terms">Paddle's Buyer Terms</a>.
+    </p>
+    <noscript><p class="fine">The checkout needs JavaScript. Without it, email
+      <a href="mailto:malix.kayat@gmail.com?subject=Buying%20Rustle%20Pro">malix.kayat@gmail.com</a>
+      to buy.</p></noscript>
   </div>
 
   <!-- ===================================================================
@@ -113,7 +123,7 @@
       <article>
         <h3>In your language too</h3>
         <p>
-          The free version hears English. Pro hears all ninety-nine languages the engine knows and follows your keyboard, so when you switch to Arabic with Win+Space, Rustle listens in Arabic. Rambling Arabic comes out as clean Arabic.
+          The free version hears English. Pro listens in the other languages the speech engine was trained on, 99 in all, and follows your keyboard, so when you switch to Arabic with Win+Space, Rustle listens in Arabic. Rambling Arabic comes out as clean Arabic. How well it hears a language depends on the language: it is at its best in the widely spoken ones. If it does not hear yours well enough, the fourteen-day refund covers it.
         </p>
       </article>
 
@@ -126,7 +136,7 @@
     <div class="scroller">
       <table>
         <thead>
-          <tr><th>&nbsp;</th><th>Free</th><th>Pro</th></tr>
+          <tr><th scope="col"><span class="sr-only">Feature</span></th><th scope="col">Free</th><th scope="col">Pro</th></tr>
         </thead>
         <tbody>
           <tr><td>Voice typing anywhere in Windows</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
@@ -136,14 +146,14 @@
           <tr><td>Dictionary and snippets</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
           <tr><td>Unlimited dictionary corrections</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
           <tr><td>Dictation in English</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
-          <tr><td>Dictation in all 99 languages, following your keyboard</td><td class="nope">No</td><td class="yes">Yes</td></tr>
+          <tr><td>Dictation in 99 languages, following your keyboard</td><td class="nope">No</td><td class="yes">Yes</td></tr>
           <tr><td>Turns rambling into clean prose</td><td class="nope">No</td><td class="yes">Yes</td></tr>
           <tr><td>A different writing voice per app</td><td class="nope">No</td><td class="yes">Yes</td></tr>
         </tbody>
       </table>
     </div>
     <p>
-      The free version is coming to the <a href="index.html">Microsoft Store</a>, and it is not a trial.
+      The free version is on the <a href="https://apps.microsoft.com/detail/9N03MH842P4Q">Microsoft Store</a>, and it is not a trial.
       It does not expire, there is no limit on how much you say, and it keeps working whether or
       not you ever buy Pro.
     </p>
@@ -155,7 +165,8 @@
 
     <h3>What happens after you pay</h3>
     <p>
-      You get a licence key by email. If it has not arrived within a day, write to <a href="mailto:malix.kayat@gmail.com">malix.kayat@gmail.com</a>. Paste the key into Rustle once and you can forget
+      You get a licence key by email: Paddle passes me your email address so the key can be sent
+      to it. If it has not arrived within a day, write to <a href="mailto:malix.kayat@gmail.com">malix.kayat@gmail.com</a>. Paste the key into Rustle once and you can forget
       about it. The key works on <strong>every computer you own</strong>, including ones you have
       not bought yet. Nothing counts your computers, because there is no server to count them.
     </p>
@@ -193,51 +204,99 @@
       <p>If it is not for you, you have fourteen days to get your money back.</p>
     </div>
     <div class="get">
-      <a class="btn buy-pro" href="#buy">Buy Rustle Pro for $29</a>
+      <button type="button" class="btn buy-pro">Buy Rustle Pro for $29</button>
       <a class="btn plain" href="index.html">Get the free one</a>
     </div>
+    <p class="fine">
+      Checkout is run by Paddle.com, the reseller and merchant of record for Rustle Pro. Pressing
+      Buy loads Paddle's checkout on this page; nothing from Paddle loads before that
+      (<a href="cookies.html">cookies</a>). By buying, you agree to the <a href="terms.html">Terms</a>
+      and <a href="https://www.paddle.com/legal/buyer-terms">Paddle's Buyer Terms</a>.
+    </p>
+    <noscript><p class="fine">The checkout needs JavaScript. Without it, email
+      <a href="mailto:malix.kayat@gmail.com?subject=Buying%20Rustle%20Pro">malix.kayat@gmail.com</a>
+      to buy.</p></noscript>
   </section>
+
+  </main>
 
   <footer>
     <p>
-      Rustle is made by Malik Alkhayat. <a href="index.html">The free version</a> &middot;
-      <a href="privacy.html">Privacy</a> &middot;
-      <a href="terms.html">Terms</a> &middot;
-      <a href="refund.html">Refunds</a> &middot;
+      Rustle is made and sold by Malik Alkhayat, publishing as Malix, in Jeddah, Saudi Arabia.
+      Rustle Pro is sold through Paddle.com, the merchant of record.
       <a href="mailto:malix.kayat@gmail.com">malix.kayat@gmail.com</a>
     </p>
     <p>
+      <a href="index.html">The free version</a> &middot;
+      <a href="privacy.html">Privacy</a> &middot;
+      <a href="terms.html">Terms</a> &middot;
+      <a href="refund.html">Refunds</a> &middot;
+      <a href="cookies.html">Cookies</a>
+    </p>
+    <p>
       Speech is turned into text by <a href="https://github.com/ggml-org/whisper.cpp">whisper.cpp</a>,
-      running on your own computer.
+      running on your own computer. &copy; 2026 Malik Alkhayat
     </p>
   </footer>
 
 </div>
 
-<script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
 <script>
-  // Paddle's checkout opens on top of this page. The token is Paddle's public
-  // client-side token, made to sit in a web page; it is not the secret API key.
+  // Paddle's checkout opens on top of this page. Nothing of Paddle's is loaded
+  // until somebody presses Buy: Paddle.js brings Paddle's own tracking with it
+  // (Retain, from profitwell.com) the moment it starts, and a visitor who only
+  // came to read has not asked for that. The token is Paddle's public client-side
+  // token, made to sit in a web page; it is not the secret API key.
   (function () {
-    var ready = false;
-    try {
-      Paddle.Initialize({ token: 'live_49ed35c76ced5c42bfe55c69353' });
-      ready = true;
-    } catch (e) {}
+    var TOKEN = 'live_49ed35c76ced5c42bfe55c69353';
+    var PRICE = 'pri_01m2gccyf9966183ef5xdgn5wv';
+    var state = 'idle';          // idle, loading, ready or failed
+    var then = null;
+
+    function byEmail() {
+      // The checkout script was blocked or did not load. Offer the email instead.
+      window.location.href = 'mailto:malix.kayat@gmail.com?subject=Buying%20Rustle%20Pro';
+    }
+
+    function open() {
+      try {
+        Paddle.Checkout.open({
+          items: [{ priceId: PRICE, quantity: 1 }],
+          settings: { theme: 'dark' }
+        });
+      } catch (e) { byEmail(); }
+    }
+
+    function load(done) {
+      if (state === 'ready') { done(); return; }
+      if (state === 'failed') { byEmail(); return; }
+      then = done;
+      if (state === 'loading') return;
+      state = 'loading';
+      var s = document.createElement('script');
+      s.src = 'https://cdn.paddle.com/paddle/v2/paddle.js';
+      s.onload = function () {
+        try { Paddle.Initialize({ token: TOKEN }); state = 'ready'; }
+        catch (e) { state = 'failed'; }
+        settle();
+      };
+      s.onerror = function () { state = 'failed'; settle(); };
+      document.head.appendChild(s);
+    }
+
+    function settle() {
+      var buttons = document.querySelectorAll('.buy-pro');
+      for (var i = 0; i < buttons.length; i++) buttons[i].removeAttribute('aria-busy');
+      var go = then; then = null;
+      if (!go) return;
+      if (state === 'ready') go(); else byEmail();
+    }
 
     var buttons = document.querySelectorAll('.buy-pro');
     for (var i = 0; i < buttons.length; i++) {
-      buttons[i].addEventListener('click', function (e) {
-        e.preventDefault();
-        if (!ready || !window.Paddle) {
-          // The checkout script was blocked or did not load. Offer the email instead.
-          window.location.href = 'mailto:malix.kayat@gmail.com?subject=Buying%20Rustle%20Pro';
-          return;
-        }
-        Paddle.Checkout.open({
-          items: [{ priceId: 'pri_01m2gccyf9966183ef5xdgn5wv', quantity: 1 }],
-          settings: { theme: 'dark' }
-        });
+      buttons[i].addEventListener('click', function () {
+        if (state === 'idle' || state === 'loading') this.setAttribute('aria-busy', 'true');
+        load(open);
       });
     }
   })();

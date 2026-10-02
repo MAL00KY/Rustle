@@ -5,12 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Terms for Rustle</title>
 <meta name="description" content="The terms for using Rustle and buying Rustle Pro, in plain English.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<a class="skip" href="#main">Skip to the content</a>
 
 <div class="wrap">
 
@@ -20,7 +19,7 @@
       <path d="M0 24 L24 0" stroke="#0C0D0E" stroke-width="1.7"/>
     </svg>
     <b>Rustle</b>
-    <nav style="margin-left:auto; display:flex; flex-wrap:wrap; justify-content:flex-end; gap:6px 18px;">
+    <nav aria-label="Rustle" style="margin-left:auto; display:flex; flex-wrap:wrap; justify-content:flex-end; gap:6px 18px;">
       <a href="index.html" style="margin-left:0">Home</a>
       <a href="pro.html" style="margin-left:0">Rustle Pro</a>
       <a href="privacy.html" style="margin-left:0">Privacy</a>
@@ -28,10 +27,12 @@
     </nav>
   </header>
 
+  <main id="main" tabindex="-1">
+
   <div class="doc-head">
     <p class="eyebrow">Rustle</p>
     <h1>Terms</h1>
-    <p class="when">Last updated 15 September 2026</p>
+    <p class="when">Last updated 30 September 2026</p>
   </div>
 
   <p>
@@ -41,8 +42,10 @@
 
   <h2>Who makes Rustle</h2>
   <p>
-    Rustle is made and sold by Malik Alkhayat, a developer based in Saudi Arabia, under the
-    publisher name Malix. In these terms, "I" and "me" mean Malik Alkhayat.
+    Rustle is made and sold by Malik Alkhayat, a developer in Jeddah, Saudi Arabia, under the
+    publisher name Malix. You can reach me at
+    <a href="mailto:malix.kayat@gmail.com">malix.kayat@gmail.com</a>. In these terms, "I" and "me"
+    mean Malik Alkhayat.
   </p>
 
   <h2>The free version</h2>
@@ -71,7 +74,8 @@
     Rustle Pro is sold through Paddle.com, which is the reseller and merchant of record for these
     orders. Paddle takes the payment, handles sales tax and VAT, and sends your receipt.
     <a href="https://www.paddle.com/legal/buyer-terms">Paddle's Buyer Terms</a> also apply to your
-    purchase.
+    purchase. Questions about a payment or a receipt can go to me or to Paddle, through the link
+    in your receipt.
   </p>
   <p>
     The price on the Rustle Pro page is in US dollars. Paddle may show it in your own currency, and
@@ -99,22 +103,47 @@
 
   <h2>Other software Rustle uses</h2>
   <p>
-    Rustle turns speech into text with <a href="https://github.com/ggml-org/whisper.cpp">whisper.cpp</a>.
-    Rustle Pro's writing features run on <a href="https://github.com/ggml-org/llama.cpp">llama.cpp</a>
-    with Google's Gemma model. These are made by other people and come with their own licences, and
-    the Gemma model is covered by the <a href="https://ai.google.dev/gemma/terms">Gemma Terms of Use</a>.
+    Rustle turns speech into text with <a href="https://github.com/ggml-org/whisper.cpp">whisper.cpp</a>
+    and OpenAI's Whisper models. Rustle Pro's writing features run on
+    <a href="https://github.com/ggml-org/llama.cpp">llama.cpp</a> with Google's Gemma model. These
+    are made by other people and come with their own licences. The full list, with every licence,
+    is in the app under <strong>About &rarr; Credits and licences</strong>.
+  </p>
+  <p>
+    Gemma is provided under and subject to the
+    <a href="https://ai.google.dev/gemma/terms">Gemma Terms of Use</a>. If you use Rustle Pro's
+    writing features, you agree not to use them for anything the
+    <a href="https://ai.google.dev/gemma/prohibited_use_policy">Gemma Prohibited Use Policy</a>
+    forbids.
+  </p>
+  <p>
+    This website's typefaces, Source Serif 4 and IBM Plex Mono, are used under the SIL Open Font
+    License.
+  </p>
+
+  <h2>The name and the words</h2>
+  <p>
+    The Rustle app, its name and leaf logo, and the text of this website are mine. Please do not
+    copy them, or use them to make something else look like Rustle.
   </p>
 
   <h2>No guarantees</h2>
   <p>
     Rustle is provided as it is. I test it carefully, but speech recognition makes mistakes, and I
-    cannot promise that Rustle will hear every word correctly or work on every computer. Please
-    check anything important before you send it.
+    cannot promise that Rustle will hear every word correctly or work on every computer. Rustle
+    Pro's tidying is done by a language model, which can also get things wrong, including the
+    meaning of what you said. Please check anything important before you send it.
   </p>
   <p>
     As far as the law allows, I am not responsible for losses caused by using Rustle, and the most I
     could owe you is what you paid for Rustle Pro. Nothing in these terms takes away rights you have
     under consumer law where you live.
+  </p>
+
+  <h2>Which law applies</h2>
+  <p>
+    These terms are governed by the laws of the Kingdom of Saudi Arabia. If you buy as a consumer
+    and live somewhere else, you also keep the protections that your own country's law gives you.
   </p>
 
   <h2>Changes to these terms</h2>
@@ -129,13 +158,22 @@
     <a href="mailto:malix.kayat@gmail.com">malix.kayat@gmail.com</a>.
   </p>
 
+  </main>
+
   <footer>
     <p>
-      Rustle is made by Malik Alkhayat.
-      <a href="index.html">Home</a> &middot;
-      <a href="privacy.html">Privacy</a> &middot;
-      <a href="refund.html">Refunds</a>
+      Rustle is made and sold by Malik Alkhayat, publishing as Malix, in Jeddah, Saudi Arabia.
+      Rustle Pro is sold through Paddle.com, the merchant of record.
+      <a href="mailto:malix.kayat@gmail.com">malix.kayat@gmail.com</a>
     </p>
+    <p>
+      <a href="index.html">Home</a> &middot;
+      <a href="pro.html">Rustle Pro</a> &middot;
+      <a href="privacy.html">Privacy</a> &middot;
+      <a href="refund.html">Refunds</a> &middot;
+      <a href="cookies.html">Cookies</a>
+    </p>
+    <p>&copy; 2026 Malik Alkhayat</p>
   </footer>
 
 </div>

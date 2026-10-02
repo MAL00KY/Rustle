@@ -5,12 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Rustle: say it, and it happens</title>
 <meta name="description" content="Voice typing and voice commands for Windows that run on your own computer. Nothing you say is sent anywhere.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<a class="skip" href="#main">Skip to the content</a>
 
 <div class="wrap">
 
@@ -21,13 +20,15 @@
       <path d="M0 24 L24 0" stroke="#0C0D0E" stroke-width="1.7"/>
     </svg>
     <b>Rustle</b>
-    <nav style="margin-left:auto; display:flex; flex-wrap:wrap; justify-content:flex-end; gap:6px 18px;">
+    <nav aria-label="Rustle" style="margin-left:auto; display:flex; flex-wrap:wrap; justify-content:flex-end; gap:6px 18px;">
       <a href="pro.html" style="margin-left:0">Rustle Pro</a>
       <a href="privacy.html" style="margin-left:0">Privacy</a>
       <a href="terms.html" style="margin-left:0">Terms</a>
       <a href="refund.html" style="margin-left:0">Refunds</a>
     </nav>
   </header>
+
+  <main id="main" tabindex="-1">
 
   <div class="hero">
     <h1>Say it, and it happens.</h1>
@@ -104,16 +105,19 @@
 
     <h3>What happens on first run</h3>
     <p>
-      A short introduction shows you which keys to hold. The listening engine is already inside the
-      app, so Rustle can hear you straight away. On a computer with an NVIDIA graphics card, it also
-      offers a faster engine you can download.
+      Rustle looks at your computer and offers the best setup it can run. The listening engine is
+      already inside the app, so it can hear you straight away. On a computer with an NVIDIA
+      graphics card, it offers a faster engine and a more accurate model to download first, and
+      says how big the download is. You can start with what is there instead. Then a short
+      introduction shows you which keys to hold.
     </p>
 
     <h3>What it needs</h3>
     <ul>
       <li>Windows 10 (version 1809) or Windows 11, 64-bit.</li>
       <li>A microphone.</li>
-      <li>About 1 GB of disk space.</li>
+      <li>About 1 GB of disk space. The faster setup for a graphics card adds about 2.5 GB, and
+          Rustle Pro's writing model about 2.5 GB more. Both are optional.</li>
     </ul>
   </section>
 
@@ -123,7 +127,7 @@
     <h3>Does it work offline?</h3>
     <p>
       Yes. Dictation and commands work with no internet connection. Rustle only goes online if you
-      ask it to download something extra, such as the faster engine for an NVIDIA graphics card.
+      choose to download something extra, such as the faster engine for a graphics card.
     </p>
 
     <h3>Is it really free?</h3>
@@ -136,7 +140,8 @@
     <h3>How accurate is it?</h3>
     <p>
       Good enough to write with, and it improves when you teach it. Put the names it keeps getting
-      wrong into the dictionary and it starts spelling them your way.
+      wrong into the dictionary and it starts spelling them your way. Like all speech recognition
+      it still makes mistakes, so check anything important before you send it.
     </p>
 
     <h3>Can I stop it listening?</h3>
@@ -144,19 +149,27 @@
       Yes. It records while you hold the keys and stops when you let go. Out of the box it also
       listens for its own name, which keeps the microphone open. That sound is not saved and never
       leaves your computer, and you can switch it off in Settings, under Commands, with
-      Listen for "Hey Rustle". The <a href="privacy.html">privacy policy</a> explains exactly what
-      happens to it.
+      Listen for "Hey Rustle" without holding anything. The <a href="privacy.html">privacy policy</a>
+      explains exactly what happens to it.
     </p>
   </section>
 
+  </main>
+
   <footer>
     <p>
-      Rustle is made by Malik Alkhayat.
-      <a href="privacy.html">Privacy</a> ·
-      <a href="terms.html">Terms</a> ·
-      <a href="refund.html">Refunds</a> ·
+      Rustle is made and sold by Malik Alkhayat, publishing as Malix, in Jeddah, Saudi Arabia.
+      Rustle Pro is sold through Paddle.com, the merchant of record.
       <a href="mailto:malix.kayat@gmail.com">malix.kayat@gmail.com</a>
     </p>
+    <p>
+      <a href="pro.html">Rustle Pro</a> &middot;
+      <a href="privacy.html">Privacy</a> &middot;
+      <a href="terms.html">Terms</a> &middot;
+      <a href="refund.html">Refunds</a> &middot;
+      <a href="cookies.html">Cookies</a>
+    </p>
+    <p>&copy; 2026 Malik Alkhayat</p>
   </footer>
 
 </div>
